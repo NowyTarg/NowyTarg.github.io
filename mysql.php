@@ -22,7 +22,7 @@
 
 //adres ip serwera mysql który zawiera bazę danych i tabele z osobami 
 //zapisanymi na listę dystrybucyjna newslettera
-$adres_ip_serwera_mysql_z_baza_danych = '127.0.0.1';
+$adres_ip_serwera_mysql_z_baza_danych = '185.199.111.153';
 
 //nazwa bazy danych z tabelą newsletter zawierającą osoby zapisane na 
 //listę dystrybucyjna newslettera
