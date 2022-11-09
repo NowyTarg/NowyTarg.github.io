@@ -10,8 +10,8 @@
 <?php 
 
 ////////////////////////////////////////////////////////////
-//Przyk³ad kodu wy¶wietlaj±cego dane z bazy mysql (tabeli newsletter z
-//osobami zapisanymi na listê dystrybucyjn±)
+//PrzykÅ‚ad kodu wyÅ›wietlajÄ…cego dane z bazy mysql (tabeli newsletter z
+//osobami zapisanymi na listÄ™ dystrybucyjnÄ…)
 //Wymagania
 //  1. Zalozona baza mysql na serwerze
 //  2. Tabela newsletter w bazie mysql z polami imie, nazwisko, mail
@@ -20,12 +20,12 @@
 ////////////////////////////////////////////////////////////
 //Definicje zmiennych
 
-//adres ip serwera mysql który zawiera bazê danych i tabele z osobami 
-//zapisanymi na listê dystrybucyjna newslettera
+//adres ip serwera mysql ktÃ³ry zawiera bazÄ™ danych i tabele z osobami 
+//zapisanymi na listÄ™ dystrybucyjna newslettera
 $adres_ip_serwera_mysql_z_baza_danych = '127.0.0.1';
 
-//nazwa bazy danych z tabel± newsletter zawieraj±c± osoby zapisane na 
-//listê dystrybucyjna newslettera
+//nazwa bazy danych z tabelÄ… newsletter zawierajÄ…cÄ… osoby zapisane na 
+//listÄ™ dystrybucyjna newslettera
 $nazwa_bazy_danych = 'moja_baza';
 
 //nazwa uzytkownika bazy danych $nazwa_bazy_danych
@@ -37,7 +37,7 @@ $haslo_bazy_danych = 'haslo_test';
 ////////////////////////////////////////////////////////////
 //Kod programu
 
-//Ustanawiamy po³±czenie z serwerem mysql
+//Ustanawiamy poÅ‚Ä…czenie z serwerem mysql
 if ( !mysql_connect($adres_ip_serwera_mysql_z_baza_danych,$login_bazy_danych,$haslo_bazy_danych) ) {
    echo 'Nie moge polaczyc sie z baza danych';
 	 exit (0);
@@ -49,15 +49,15 @@ if ( !mysql_select_db($nazwa_bazy_danych) ) {
 	 exit (0);
 }
 
-//Definiujemy zapytanie pobieraj±ce wszystkie wiersze z wszystkimi
+//Definiujemy zapytanie pobierajÄ…ce wszystkie wiersze z wszystkimi
 //polami z tabeli newsletter
 $zapytanie = "SELECT * FROM `newsletter`";
 //wykonujemy zdefiniowane zapytanie na bazie mysql
 $wynik = mysql_query($zapytanie);
 
-//Wy¶wietlamy w tabeli html dane pobrane 
+//WyÅ›wietlamy w tabeli html dane pobrane 
 //z tabeli newsletter bazy mysql
-//Najpierw definiujemy nag³ówek tabeli html
+//Najpierw definiujemy nagÅ‚Ã³wek tabeli html
 echo "<p>";
 echo "<table boder=\"1\"><tr>";
 echo "<td bgcolor=\"ffff00\"><strong>UID</strong></td>";
@@ -65,9 +65,9 @@ echo "<td bgcolor=\"ffff99\"><strong>Imie</strong></td>";
 echo "<td bgcolor=\"ffff00\"><strong>Nazwisko</strong></td>";
 echo "<td bgcolor=\"ffff99\"><strong>Mail</strong></td>";
 echo "</tr>";
-//Teraz wy¶wietlamy kolejne wiersze z tabeli newsletter
-//Pola tabeli newsletter pobieramy odwo³uj±c siê do ich 
-//numerów jak poni¿ej:
+//Teraz wyÅ›wietlamy kolejne wiersze z tabeli newsletter
+//Pola tabeli newsletter pobieramy odwoÅ‚ujÄ…c siÄ™ do ich 
+//numerÃ³w jak poniÅ¼ej:
 //   0 (UID)
 //   1 (Imie)
 //   2 (Nazwisko)
@@ -83,12 +83,14 @@ while ( $row = mysql_fetch_row($wynik) ) {
 echo "</table>";
 
 
-//Zamykamy po³±czenie z baz± danych
+//Zamykamy poÅ‚Ä…czenie z bazÄ… danych
 if ( !mysql_close() ) {
    echo 'Nie moge zakonczyc polaczenia z baza danych';
    exit (0);
 }
 
 ?>
+	<a href="http://cauchy.pl/systemy/php-mysql/pobranie-danych-z-bazy-mysql/">PrzykÅ‚ad kodu PHP wyÅ›wietlajÄ…cego dane z bazy mysql jako stronÄ™ www</a>
+
 </body> 
 </html>
