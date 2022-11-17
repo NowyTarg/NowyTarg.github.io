@@ -1,5 +1,5 @@
 .up {
   border: 5px solid red;
   min-height: 150px;
-  width: 100%;
+  width: screen.width;
 }
