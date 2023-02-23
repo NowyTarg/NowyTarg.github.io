@@ -2,6 +2,7 @@
   border: 5px solid red;
   min-height: 150px;
   width: screen.width;
+  border-radius:20px;
 }
 
 hh1 {
