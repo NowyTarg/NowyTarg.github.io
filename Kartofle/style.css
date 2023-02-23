@@ -10,10 +10,12 @@
   border-radius:20px;
 }
 .yeah {
-  background-color: green; 
+  background-color: #00ff1e; 
+  border-radius:20px;
 }
 .no {
   background-color: red; 
+  border-radius:20px;
 }
 
 hh1 {
