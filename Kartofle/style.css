@@ -1,8 +1,14 @@
 .up {
-  border: 5px solid red;
+  border: 5px solid blue;
   min-height: 150px;
   width: screen.width;
   border-radius:20px;
+}
+.yeah {
+  background-color: solid green; 
+}
+.no {
+  background-color: solid red; 
 }
 
 hh1 {
