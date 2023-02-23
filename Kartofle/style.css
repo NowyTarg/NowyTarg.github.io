@@ -12,10 +12,12 @@
 .yeah {
   background-color: #00ff1e; 
   border-radius:20px;
+  border: 1px #00ff1e solid;
 }
 .no {
   background-color: red; 
   border-radius:20px;
+  border: 1px red solid;
 }
 
 hh1 {
