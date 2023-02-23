@@ -1,4 +1,9 @@
 .up {
+  border: 5px solid red;
+  min-height: 150px;
+  width: screen.width;
+}
+.upp {
   border: 5px solid blue;
   min-height: 150px;
   width: screen.width;
